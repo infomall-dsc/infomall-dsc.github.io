@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="../spark_midas.html" />
+<link rel="shortlink" href="44.html" />
+<link rel="revision" href="../spark_midas.html" />
+
+    <title>Testing, Integration, Development of SPARK for MIDAS | Digital Science Center</title>
+    <link rel="stylesheet" media="all" href="../sites/default/files/css/css_OIzBRxciYG74p5zSuRGfzMOMmxX2w4G6eJ9zFXXGLgE.css" />
+<link rel="stylesheet" media="all" href="../sites/default/files/css/css_BxC2L0MMymfKu3TD4cbhDTatkeZA6AgVSmQ5WHJuqVY.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  </head>
+  <body class="path-node page-node-type-page has-glyphicons">
+    <a href="44.html#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="header" role="banner">
+        <div id="branding-bar" itemscope="itemscope" itemtype="http://schema.org/CollegeOrUniversity" role="complementary" aria-labelledby="campus-name">
+	<div class="row pad">
+			<img src="https://assets.iu.edu/brand/3.x/trident-large.png" alt="IU" />
+			<p id="iu-campus">
+				<a href="https://www.indiana.edu" title="Indiana University Bloomington">
+					<span id="campus-name" class="show-on-desktop" itemprop="name">Indiana University Bloomington</span>
+					<span class="show-on-tablet" itemprop="name">Indiana University Bloomington</span>
+					<span class="show-on-mobile" itemprop="name">IU Bloomington</span>
+				</a>
+			</p>
+	</div>
+</div>
+
+<!--<div id="toggles">
+    <div class="row pad">
+        <button class="button hide-for-large" data-toggle="offCanvas">Menu</button>
+        <a class="button search-toggle" href="/search">Open Search Feature</a>
+    </div>
+</div>
+
+
+<div id="search" class="search-box" role="search"></div>-->    </header>
+    
+    <nav class="navbar navbar-default container" id="navbar" role="banner">
+            <div class="navbar-header">
+          <div class="region region-navigation">
+          <a class="logo navbar-btn pull-left" href="../index.html" title="Home" rel="home">
+      <img src="../sites/default/files/DSC-Banner-Image.jpg" alt="Home" />
+    </a>
+      
+  </div>
+
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+              </div>
+
+                    <div id="navbar-collapse" class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-dsc-bootstrap-main-menu-menu" id="block-dsc-bootstrap-main-menu">
+            <h2 class="sr-only" id="block-dsc-bootstrap-main-menu-menu">Main navigation</h2>
+
+      
+      <ul class="menu menu--main nav navbar-nav">
+                      <li class="first">
+                                        <a href="../index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+              </li>
+                      <li>
+                                        <a href="../publications.html" data-drupal-link-system-path="node/97">Publications</a>
+              </li>
+                      <li>
+                                        <a href="../presentations.html" data-drupal-link-system-path="node/5">Presentations</a>
+              </li>
+                      <li>
+                                        <a href="../contact.html" data-drupal-link-system-path="node/6">Contact</a>
+              </li>
+                      <li class="last">
+                                        <a href="../spidal.html" data-drupal-link-system-path="node/14">SPIDAL</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+        </div>
+                </nav>
+  
+  <div role="main" class="main-container container js-quickedit-main-content">
+    <div class="row">
+
+                              <div class="col-sm-12" role="heading">
+              <div class="region region-header">
+      
+<div data-drupal-messages-fallback class="hidden"></div>
+<div class="search-block-form block block-search block-search-form-block" data-drupal-selector="search-block-form" id="block-dsc-bootstrap-search" role="search">
+  
+      <h2 class="visually-hidden">Search</h2>
+    
+      <form action="https://www.dsc.soic.indiana.edu/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
+      <label for="edit-keys" class="control-label sr-only">Search</label>
+  
+  
+  <div class="input-group"><input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" class="form-search form-control" placeholder="Search" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" data-toggle="tooltip" /><span class="input-group-btn"><button type="submit" value="Search" class="button js-form-submit form-submit btn-primary btn icon-only" name=""><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></span></div>
+
+  
+  
+  </div>
+<div class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions" id="edit-actions"></div>
+
+</form>
+
+  </div>
+
+  </div>
+
+          </div>
+              
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <nav role="navigation" aria-labelledby="block-dscmenu-menu" id="block-dscmenu">
+            
+  <h2 class="visually-hidden" id="block-dscmenu-menu">DSC Menu</h2>
+  
+
+        
+      <ul class="menu menu--dsc-menu nav">
+                      <li class="first">
+                                        <a href="../news.html" data-drupal-link-system-path="news">News</a>
+              </li>
+                      <li>
+                                        <a href="../people.html" data-drupal-link-system-path="people">Personnel</a>
+              </li>
+                      <li class="expanded dropdown">
+                                                                    <a href="../current_projects.html" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/53">Research <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                      <li class="first">
+                                        <a href="../current_projects.html" data-drupal-link-system-path="node/53">Current Projects</a>
+              </li>
+                      <li>
+                                        <a href="../ipcc.html" data-drupal-link-system-path="node/99">IPCC</a>
+              </li>
+                      <li>
+                                        <a href="../futuresystems.html" data-drupal-link-system-path="node/7">FutureSystems</a>
+              </li>
+                      <li>
+                                        <a href="../rapydli.html" data-drupal-link-system-path="node/15">RaPyDLI</a>
+              </li>
+                      <li>
+                                        <a href="../spidal.html" data-drupal-link-system-path="node/14">SPIDAL</a>
+              </li>
+                      <li>
+                                        <a href="../salsa.html" data-drupal-link-system-path="node/54">SALSA</a>
+              </li>
+                      <li>
+                                        <a href="../cloudmesh.html" data-drupal-link-system-path="node/100">Cloudmesh</a>
+              </li>
+                      <li>
+                                        <a href="../iot_cloud.html" data-drupal-link-system-path="node/8">IOTCloud</a>
+              </li>
+                      <li>
+                                        <a href="../ssri.html" data-drupal-link-system-path="node/55">SSRI</a>
+              </li>
+                      <li>
+                                        <a href="../comet.html" data-drupal-link-system-path="node/9">Comet</a>
+              </li>
+                      <li>
+                                        <a href="../other_links.html" data-drupal-link-system-path="node/56">Other Links</a>
+              </li>
+                      <li class="last">
+                                        <a href="../stream2015_final_report.html" data-drupal-link-system-path="node/57">STREAM2015</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                                    <a href="../education.html" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/11">Education <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                      <li class="first">
+                                        <a href="../education.html" data-drupal-link-system-path="node/11">Distance Education</a>
+              </li>
+                      <li class="last">
+                                        <a href="../reu.html" data-drupal-link-system-path="node/98">REU</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li>
+                                        <a href="../publications.html" data-drupal-link-system-path="node/97">Publications</a>
+              </li>
+                      <li>
+                                        <a href="../presentations.html" data-drupal-link-system-path="node/5">Presentations</a>
+              </li>
+                      <li>
+                                        <a href="../inactive_projects.html" data-drupal-link-system-path="node/10">Inactive Projects</a>
+              </li>
+                      <li>
+                                        <a href="../semiactive_projects.html" data-drupal-link-system-path="node/58">Semi-Active Projects</a>
+              </li>
+                      <li>
+                                        <a href="../blogs.html" data-drupal-link-system-path="node/13">Project Blogs</a>
+              </li>
+                      <li>
+                                        <a href="../memories.html" data-drupal-link-system-path="node/12">Memories</a>
+              </li>
+                      <li>
+                                        <a href="../contact.html" data-drupal-link-system-path="node/6">Contact</a>
+              </li>
+                      <li class="expanded dropdown last">
+                                                                    <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="&lt;front&gt;">Quick Links <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                      <li class="first">
+                                        <a href="http://luddy.indiana.edu/">IU Luddy School of Informatics, Computing, and Engineering</a>
+              </li>
+                      <li class="last">
+                                        <a href="https://pti.iu.edu/">Pervasive Technology Institute</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                
+                
+                
+                                      
+                  
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span property="schema:name">Testing, Integration, Development of SPARK for MIDAS</span>
+</h1>
+
+  <article data-history-node-id="44" role="article" about="/spark_midas" typeof="schema:WebPage" class="page full clearfix">
+
+  
+      <span property="schema:name" content="Testing, Integration, Development of SPARK for MIDAS" class="hidden"></span>
+
+
+  
+  <div class="content">
+    
+            <div property="schema:text" class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p>MIDAS is Middleware for Data-Intensive Analysis and Science that provide: Resource Management, Coordination and Communication, address heterogeneity at the infrastructure level, is flexible and compute-data coupling.</p>
+
+<p>Spark is an open source cluster-computing framework that belongs to Apache Ecosystem. In contrast to Hadoop’s two-stage disk-based Map Reduce paradigm, Spark's multistage in-memory primitives provide performance up to 100 faster for certain applications. By allowing user programs to load data into a cluster’s memory and query it repeatedly, Spark is well-suited to machine learning algorithms.</p>
+
+<p>The main objective of the project is to integrate Apache Spark with MIDAS tools using the Pilot Abstraction, which is going to be the interoperability layer between Spark and HPC. Spark Cluster can be launched using a Pilot-Job. The Pilot Agent is responsible for managing Spark’s resources, which are the CPU cores, the nodes and the required resources of the application. Spark is intended for iterative algorithms, so in-memory API is provided for the distributed cluster memory. It can be file, spark or Redis memory manager. In order to test the implementation, we developed a couple of applications to run on to of the infrastructure, k-means and leaflet finder algorithms, which are iterative algorithms. The project is still in development mode.</p>
+
+<p>We have also begun developing a testing framework for these developments.</p></div>
+      
+  </div>
+
+</article>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+        <div class="region region-footer">
+    <nav role="navigation" aria-labelledby="block-dsc-bootstrap-account-menu-menu" id="block-dsc-bootstrap-account-menu">
+            <h2 class="sr-only" id="block-dsc-bootstrap-account-menu-menu">User account menu</h2>
+
+      
+      <ul class="menu menu--account nav navbar-nav navbar-right">
+                      <li class="first last">
+                                        <a href="../user/login.html" data-drupal-link-system-path="user/login">Log in</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+    </footer>
+  
+<footer id="footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/CollegeOrUniversity">
+    <div class="row pad">
+
+        <p class="tagline">Fulfilling <span>the</span> Promise</p>
+
+        <p class="signature">
+            <a href="https://www.iu.edu" class="signature-link">Indiana University</a>
+        </p>
+
+        <p class="copyright">
+        <a href="https://www.iu.edu/copyright/index.html">Copyright</a> &#169; 2020 <span class="line-break-small">The Trustees of <a href="https://www.iu.edu/" itemprop="url"><span itemprop="name">Indiana University</span></a></span><span class="hide-on-mobile"> | </span><span class="line-break"><a href="../privacy.html" id="privacy-policy-link">Privacy Notice</a> | <a href="https://accessibility.iu.edu" id="accessibility-link" title="Having trouble accessing this web page because of a disability? Visit this page for assistance.">Accessibility</a></span>
+        </p>
+    </div>
+</footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/44","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"ajaxTrustedUrl":{"\/search\/node":true},"user":{"uid":0,"permissionsHash":"f7b8dc7c38a7939459741505e64d9a7716f6a1a04c660deea52c85cadbbd44da"}}</script>
+<script src="../sites/default/files/js/js_N25huzd5_nvxUy0vaNALIG6fo46vv3n833_3JR2rIqM.js"></script>
+<script src="../themes/custom/dsc_bootstrap/js/bootstrap.min.js"></script>
+<script src="../sites/default/files/js/js_guaLTAo-vz9d3N3Hsc7gjYVRxwSafdSfcYWr09X1jbg.js"></script>
+
+  </body>
+</html>

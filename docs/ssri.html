@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="ssri.html" />
+<link rel="shortlink" href="node/55.html" />
+<link rel="revision" href="ssri.html" />
+
+    <title>Streaming and Steering Applications: Requirements and Infrastructure | Digital Science Center</title>
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_OIzBRxciYG74p5zSuRGfzMOMmxX2w4G6eJ9zFXXGLgE.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_BxC2L0MMymfKu3TD4cbhDTatkeZA6AgVSmQ5WHJuqVY.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  </head>
+  <body class="path-node page-node-type-page has-glyphicons">
+    <a href="ssri.html#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="header" role="banner">
+        <div id="branding-bar" itemscope="itemscope" itemtype="http://schema.org/CollegeOrUniversity" role="complementary" aria-labelledby="campus-name">
+	<div class="row pad">
+			<img src="https://assets.iu.edu/brand/3.x/trident-large.png" alt="IU" />
+			<p id="iu-campus">
+				<a href="https://www.indiana.edu" title="Indiana University Bloomington">
+					<span id="campus-name" class="show-on-desktop" itemprop="name">Indiana University Bloomington</span>
+					<span class="show-on-tablet" itemprop="name">Indiana University Bloomington</span>
+					<span class="show-on-mobile" itemprop="name">IU Bloomington</span>
+				</a>
+			</p>
+	</div>
+</div>
+
+<!--<div id="toggles">
+    <div class="row pad">
+        <button class="button hide-for-large" data-toggle="offCanvas">Menu</button>
+        <a class="button search-toggle" href="/search">Open Search Feature</a>
+    </div>
+</div>
+
+
+<div id="search" class="search-box" role="search"></div>-->    </header>
+    
+    <nav class="navbar navbar-default container" id="navbar" role="banner">
+            <div class="navbar-header">
+          <div class="region region-navigation">
+          <a class="logo navbar-btn pull-left" href="index.html" title="Home" rel="home">
+      <img src="sites/default/files/DSC-Banner-Image.jpg" alt="Home" />
+    </a>
+      
+  </div>
+
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+              </div>
+
+                    <div id="navbar-collapse" class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-dsc-bootstrap-main-menu-menu" id="block-dsc-bootstrap-main-menu">
+            <h2 class="sr-only" id="block-dsc-bootstrap-main-menu-menu">Main navigation</h2>
+
+      
+      <ul class="menu menu--main nav navbar-nav">
+                      <li class="first">
+                                        <a href="index.html" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+              </li>
+                      <li>
+                                        <a href="publications.html" data-drupal-link-system-path="node/97">Publications</a>
+              </li>
+                      <li>
+                                        <a href="presentations.html" data-drupal-link-system-path="node/5">Presentations</a>
+              </li>
+                      <li>
+                                        <a href="contact.html" data-drupal-link-system-path="node/6">Contact</a>
+              </li>
+                      <li class="last">
+                                        <a href="spidal.html" data-drupal-link-system-path="node/14">SPIDAL</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+        </div>
+                </nav>
+  
+  <div role="main" class="main-container container js-quickedit-main-content">
+    <div class="row">
+
+                              <div class="col-sm-12" role="heading">
+              <div class="region region-header">
+      
+<div data-drupal-messages-fallback class="hidden"></div>
+<div class="search-block-form block block-search block-search-form-block" data-drupal-selector="search-block-form" id="block-dsc-bootstrap-search" role="search">
+  
+      <h2 class="visually-hidden">Search</h2>
+    
+      <form action="https://www.dsc.soic.indiana.edu/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
+      <label for="edit-keys" class="control-label sr-only">Search</label>
+  
+  
+  <div class="input-group"><input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" class="form-search form-control" placeholder="Search" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" data-toggle="tooltip" /><span class="input-group-btn"><button type="submit" value="Search" class="button js-form-submit form-submit btn-primary btn icon-only" name=""><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></span></div>
+
+  
+  
+  </div>
+<div class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions" id="edit-actions"></div>
+
+</form>
+
+  </div>
+
+  </div>
+
+          </div>
+              
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <nav role="navigation" aria-labelledby="block-dscmenu-menu" id="block-dscmenu">
+            
+  <h2 class="visually-hidden" id="block-dscmenu-menu">DSC Menu</h2>
+  
+
+        
+      <ul class="menu menu--dsc-menu nav">
+                      <li class="first">
+                                        <a href="news.html" data-drupal-link-system-path="news">News</a>
+              </li>
+                      <li>
+                                        <a href="people.html" data-drupal-link-system-path="people">Personnel</a>
+              </li>
+                      <li class="expanded dropdown active active-trail">
+                                                                    <a href="current_projects.html" class="dropdown-toggle active-trail" data-toggle="dropdown" data-drupal-link-system-path="node/53">Research <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                      <li class="first">
+                                        <a href="current_projects.html" data-drupal-link-system-path="node/53">Current Projects</a>
+              </li>
+                      <li>
+                                        <a href="ipcc.html" data-drupal-link-system-path="node/99">IPCC</a>
+              </li>
+                      <li>
+                                        <a href="futuresystems.html" data-drupal-link-system-path="node/7">FutureSystems</a>
+              </li>
+                      <li>
+                                        <a href="rapydli.html" data-drupal-link-system-path="node/15">RaPyDLI</a>
+              </li>
+                      <li>
+                                        <a href="spidal.html" data-drupal-link-system-path="node/14">SPIDAL</a>
+              </li>
+                      <li>
+                                        <a href="salsa.html" data-drupal-link-system-path="node/54">SALSA</a>
+              </li>
+                      <li>
+                                        <a href="cloudmesh.html" data-drupal-link-system-path="node/100">Cloudmesh</a>
+              </li>
+                      <li>
+                                        <a href="iot_cloud.html" data-drupal-link-system-path="node/8">IOTCloud</a>
+              </li>
+                      <li class="active active-trail">
+                                        <a href="ssri.html" class="active-trail is-active" data-drupal-link-system-path="node/55">SSRI</a>
+              </li>
+                      <li>
+                                        <a href="comet.html" data-drupal-link-system-path="node/9">Comet</a>
+              </li>
+                      <li>
+                                        <a href="other_links.html" data-drupal-link-system-path="node/56">Other Links</a>
+              </li>
+                      <li class="last">
+                                        <a href="stream2015_final_report.html" data-drupal-link-system-path="node/57">STREAM2015</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                                    <a href="education.html" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/11">Education <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                      <li class="first">
+                                        <a href="education.html" data-drupal-link-system-path="node/11">Distance Education</a>
+              </li>
+                      <li class="last">
+                                        <a href="reu.html" data-drupal-link-system-path="node/98">REU</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li>
+                                        <a href="publications.html" data-drupal-link-system-path="node/97">Publications</a>
+              </li>
+                      <li>
+                                        <a href="presentations.html" data-drupal-link-system-path="node/5">Presentations</a>
+              </li>
+                      <li>
+                                        <a href="inactive_projects.html" data-drupal-link-system-path="node/10">Inactive Projects</a>
+              </li>
+                      <li>
+                                        <a href="semiactive_projects.html" data-drupal-link-system-path="node/58">Semi-Active Projects</a>
+              </li>
+                      <li>
+                                        <a href="blogs.html" data-drupal-link-system-path="node/13">Project Blogs</a>
+              </li>
+                      <li>
+                                        <a href="memories.html" data-drupal-link-system-path="node/12">Memories</a>
+              </li>
+                      <li>
+                                        <a href="contact.html" data-drupal-link-system-path="node/6">Contact</a>
+              </li>
+                      <li class="expanded dropdown last">
+                                                                    <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="&lt;front&gt;">Quick Links <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                      <li class="first">
+                                        <a href="http://luddy.indiana.edu/">IU Luddy School of Informatics, Computing, and Engineering</a>
+              </li>
+                      <li class="last">
+                                        <a href="https://pti.iu.edu/">Pervasive Technology Institute</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                
+                
+                
+                                      
+                  
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span property="schema:name">Streaming and Steering Applications: Requirements and Infrastructure</span>
+</h1>
+
+  <article data-history-node-id="55" role="article" about="/ssri" typeof="schema:WebPage" class="page full clearfix">
+
+  
+      <span property="schema:name" content="Streaming and Steering Applications: Requirements and Infrastructure" class="hidden"></span>
+
+
+  
+  <div class="content">
+    
+            <div property="schema:text" class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><h2>Streaming and Steering Applications: Requirements and Infrastructure</h2>
+
+<h3>Summary</h3>
+
+<p>We propose a workshop SSRI2015 covering a class of applications — those associated with streaming data and related (near) real-time steering and control – that are of growing interest and importance. The goal of the workshop is to identify application and technology communities in this area and to clarify challenges that they face. We will focus on application features and requirements as well as hardware and software needed to support them. We will also look at research issues and possible future steps after the workshop. We will produce a report on workshop discussions that will be delivered in 2015 based on a workshop held in Indianapolis. Two full meeting days (October 1-2) will be followed by a report writing day on October 3, 2015. The proposed budget covers travel and meeting expenses for 35 attendees. The meeting will be streamed with live video and screen sharing. We intend a follow up workshop in Wahington DC some 6 months after the first workshop.</p>
+
+<p>We have surveyed the field and identified application classes including Internet of People, wearables, Social media, Twitter, cell phones, blogs, financial transactions, Industrial Internet of Things, Cyberphysical Systems, Satellite and airborne monitors, National Security, Justice, Military, Astronomy, Light Sources, and Instruments like the LHC, Sequencers, Data Assimilation, Analysis of Simulation Results, Steering and Control. We also survey technology developments across academia and Industry where all the major commercial clouds offer significant new systems aimed at this area.</p>
+
+<h2>SSRI2015: Streaming and Steering Applications: Requirements and Infrastructure</h2>
+
+<h3>1.       Introduction</h3>
+
+<p>This proposal is to support a workshop covering a class of applications — those associated with streaming data and related (near) real-time steering and control. The goal of the workshop is to identify application, infrastructure and technology communities in this area and to clarify challenges that they face. We will focus on application features and requirements as well as hardware and software needed to support them. We will also look at research issues. In this proposal we cover typical application areas (Section 2) and some approaches to software (Section 3). Section 4 covers broad features of workshop including related (previous) activities, a summary of why it’s needed and our plan to make this a sustainable activity within this community. Section 5 covers our plan for recruitment to workshop and suggested attendees. It also covers the report generated by workshop describing findings and identifying future activities building the streaming and steering community. Section 6 discusses broader impact and Section 7 concludes proposal with the appendix in Section 8 giving proposed schedule and venue details.</p>
+
+<h3>2.       Streaming and Steering Application Areas</h3>
+
+<p>In Table 1, we identify eight problem areas that involve streaming data. We argue that the applications of Table 1 are critical for next-generation scientific research and thus need research into a unifying conceptual architecture, programming models as well as scalable run time. All problem areas are actively used today but without agreed software models focused on streaming.</p>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td colspan="2">
+			<p><strong>Streaming/Steering Application Class</strong></p>
+			</td>
+			<td>
+			<p><strong>Details and Examples</strong></p>
+			</td>
+			<td>
+			<p><strong>Features</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>Internet of People: wearables</p>
+			</td>
+			<td>
+			<p>Smart watches, bands, health, glasses, telemedicine</p>
+			</td>
+			<td>
+			<p>Small independent events</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>Social media, Twitter, cell phones, blogs, financial transactions</p>
+			</td>
+			<td>
+			<p>Study of information flow, online algorithms, outliers, graph analytics</p>
+			</td>
+			<td>
+			<p>Sophisticated analytics across many events; text and numerical data</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>3</p>
+			</td>
+			<td>
+			<p>Industrial Internet of Things, Cyberphysical Systems, Control</p>
+			</td>
+			<td>
+			<p>Software Defined Machines, Smart buildings, transportation, Electrical Grid, Environmental and seismic sensors, Robotics, Autonomous vehicles, Drones</p>
+			</td>
+			<td>
+			<p>Real-time response often needed; data varies from large to small events</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>4</p>
+			</td>
+			<td>
+			<p>Satellite and airborne monitors, National Security; Justice, Military</p>
+			</td>
+			<td>
+			<p>Surveillance, remote sensing, Missile defense, Anti-submarine, Naval tactical cloud</p>
+			</td>
+			<td>
+			<p>Often large volumes of data and sophisticated image analysis</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>5</p>
+			</td>
+			<td>
+			<p>Astronomy, Light Sources, Instruments like LHC, Sequencers</p>
+			</td>
+			<td>
+			<p>Scientific Data Analysis in real time or batch from “large” sources. LSST, DES, SKA in astronomy</p>
+			</td>
+			<td>
+			<p>Real-time or sometimes batch, or even both. large complex events</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>6</p>
+			</td>
+			<td>
+			<p>Data Assimilation</p>
+			</td>
+			<td>
+			<p>Integrate typically distributed data into simulations to enhance quality.</p>
+			</td>
+			<td>
+			<p>Link large scale parallel simulations with time dependent data. Sensitivity to latency.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>7</p>
+			</td>
+			<td>
+			<p>Analysis of Simulation Results</p>
+			</td>
+			<td>
+			<p>Climate, Fusion, Molecular Dynamics, Materials. Typically local or in-situ data</p>
+			</td>
+			<td>
+			<p>Increasing bottleneck as simulations scale in size.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>8</p>
+			</td>
+			<td>
+			<p>Steering and Control</p>
+			</td>
+			<td>
+			<p>Control of simulations or Experiments. Data could be local or distributed</p>
+			</td>
+			<td>
+			<p>Variety of scenarios  with similarities to robotics</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="center"><strong>Table 1: Eight Streaming and/or Steering Application Classes</strong></p>
+
+<p>As we illustrate in Table 1, these applications are not of course new but they are growing rapidly in size and importance. Correspondingly it becomes relevant to examine the needed functionality and performance of hardware and software infrastructure that could support these applications. We can identify such applications within academic, commercial and government areas. Examples  in Table 1 include the Internet of Things projected to reach 30 to 70 billion devices in 2020 [<a href="ssri.html#_ENREF_1" title="Cisco Internet Business Solutions Group (IBSG) (Dave Evans), 2011 #6289">1</a>]with particular examples including wearables, brilliant machines [<a href="ssri.html#_ENREF_2" title="Chauhan, 2014 #6660">2</a>]and smart buildings; these myriad of small devices contrasts with events streaming from larger scientific instruments such light sources, telescopes, satellites and sequencers. There is the social media phenomena that adds over 20,000 photos online every second [<a href="ssri.html#_ENREF_3" title="Kimberlee Morrison, 2015 #6664">3</a>]with an active research program studying structure and dynamics of information. In National Security, one notable example comes from the Navy which is developing Apache Foundation streaming (big data) software for missile defense [<a href="ssri.html#_ENREF_4" title="ONR, 2014 #6665">4</a>]. A NIST survey [<a href="ssri.html#_ENREF_5" title="NIST, 2013 #6645">5</a>]of big data applications found that 80% involved some of streaming [<a href="ssri.html#_ENREF_6" title="Geoffrey C. Fox, 2015 #6453">6</a>]and the AFOSR DDDAS initiative [<a href="ssri.html#_ENREF_7" title=",  #6686">7-9</a>]looks at streaming and control (steering). Data assimilation and Kalman filters have been extensively to incorporate streaming data into analytics such as weather forecasts and target tracking.</p>
+
+<p>Most of the applications involve linking analysis with distributed dynamic data and can require real-time response.  The requirements of distributed computing problems which couple HPC and cloud computing with streaming data, are distinct from those familiar from large scale parallel simulations, grid computing, data repositories and workflows which have generated sophisticated software platforms. Scientific experiments are increasingly producing large amounts of data that need to be processed on HPC and/or cloud platforms. These experiments often need support for real-time feedback to steer the instruments. Thus, there is a growing need to generalize computational steering to include coupling of distributed resources in real-time, and a fresh perspective on how streaming data might be incorporated in this infrastructure. The analysis of simulation results or visualizations has been explored significantly in last few years and is recognized to be a serious problem as simulations increase their performance towards exascale. The in-situ analysis of such data shares features with streaming applications but the data is not distributed if simulation and analysis engines are identical or co-located.</p>
+
+<p>One goal of the workshop will be to identify those features that distinguish different applications in the streaming/steering class. Five categories we have already identified are:</p>
+
+<p align="left">a)     <strong>Set of independent events where precise time sequencing unimportant.</strong> <em>e.g. independent search requests or smartphone or wearable cloud accesses from users.</em></p>
+
+<p align="left">b)     <strong>Time series of connected small events where time ordering important. </strong><em>e.g. streaming audio or video; robot monitoring.</em></p>
+
+<p align="left">c)     <strong>Set of independent large events where each event needs parallel processing with time sequencing not critical </strong><em>Example: processing images from telescopes or light sources with material science.</em></p>
+
+<p align="left">d)     <strong>Set of connected large events where each event needs parallel processing with time sequencing critical</strong> <em>e.g. processing high resolution monitoring (including video) information from robots (self-driving cars) with real time response needed.</em></p>
+
+<p align="left">e)     <strong>Stream of connected small or large events that need to be integrated in a complex way. </strong><em>e.g. streaming events being used to update model (e.g. clustering) rather than being classified with an existing static model which fits category a).</em></p>
+
+<p>These 5 categories can be further considered for single or multiple heterogeneous streams. we will refine and expand these categories as part of workshop</p>
+
+<h3>3.       Software Models for Streaming and Steering</h3>
+
+<p>Although the growing importance of these application areas has been recognized, we see that the needed hardware and software infrastructure is not as well studied. Particular solutions such as for the analysis of events from the LHC or imagery from telescopes and light sources have been developed.</p>
+
+<p>The distributed stream processing community has produced frameworks to deploy, execute and manage event based applications at large scale and these are one important class of streaming and steering software. Examples of early event stream processing frameworks include, Aurora[<a href="ssri.html#_ENREF_10" title="Cherniack, 2003 #6508">10</a>], Borealis[<a href="ssri.html#_ENREF_11" title="Abadi, 2005 #6509">11</a>], StreamIt[<a href="ssri.html#_ENREF_12" title="Thies, 2002 #6510">12</a>]and SPADE[<a href="ssri.html#_ENREF_13" title="Gedik, 2008 #6511">13</a>]. With the emergence of Internet Scale applications in the recent years, new distributed map-streaming processing models like, Apache S4[<a href="ssri.html#_ENREF_14" title="Neumeyer, 2010 #6512">14</a>], Apache Storm[<a href="ssri.html#_ENREF_15" title="Anderson, 2013 #6496">15</a>], Apache Samza[<a href="ssri.html#_ENREF_16" title="Kamburugamuve, 2013 #6513">16</a>], Spark Streaming[<a href="ssri.html#_ENREF_17" title="Zaharia, 2012 #6514">17</a>], Twitter’s Heron[<a href="ssri.html#_ENREF_18" title="Sanjeev Kulkarni, 2015 #6662">18</a>]and Granules[<a href="ssri.html#_ENREF_19" title="Shrideep Pallickara, 2015 #6661">19</a>]with commercial solutions including Google Millwheel[<a href="ssri.html#_ENREF_20" title="Akidau, 2013 #6515">20</a>]Azure Stream Analytics[<a href="ssri.html#_ENREF_21" title="Microsoft, 2015 #6663">21</a>]and Amazon Kinesis[<a href="ssri.html#_ENREF_22" title="Varia, 2013 #6523">22</a>]have been developed.</p>
+
+<p>Although these academic and commercial approaches are effective, we suggest a more integrated approach that spans many application areas and many solutions and evaluates applications with current and future software. This could lead to new research directions for a scalable infrastructure, and clearer ideas as to appropriate infrastructure to support a range of applications. Note in the grid solutions for problems like LHC data analysis, events tend not be streamed directly but rather batches are processed on distributed infrastructure. In Table 2 below, we contrast some well know scientific computing paradigms with streaming and steering.</p>
+
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td colspan="2">
+			<p><strong>Paradigm</strong></p>
+			</td>
+			<td>
+			<p><strong>Features and Examples</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong>1</strong></p>
+			</td>
+			<td>
+			<p>Multiple Loosely Coupled Tasks</p>
+			</td>
+			<td>
+			<p>Grid computing, largely independent computing/event analysis, many task computing</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong>2</strong></p>
+			</td>
+			<td>
+			<p>MapReduce</p>
+			</td>
+			<td>
+			<p>Single Pass compute and collective computation.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong>3</strong></p>
+			</td>
+			<td>
+			<p>BSP and Iterative MapReduce</p>
+			</td>
+			<td>
+			<p>Iterative staged compute (map) and computation includes parallel machine learning, graph, simulations. Typically Batch</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong>4</strong></p>
+			</td>
+			<td>
+			<p>Workflow</p>
+			</td>
+			<td>
+			<p>Dataflow linking functional stages of execution</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong>5</strong></p>
+			</td>
+			<td>
+			<p>Streaming</p>
+			</td>
+			<td>
+			<p>Incremental (often distributed) data I/O feeding to long running analysis using other computing paradigms. Typically interactive</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong>6</strong></p>
+			</td>
+			<td>
+			<p>Steering</p>
+			</td>
+			<td>
+			<p>Incremental I/O from computer or instrument driving possibly real-time response (control)</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="center"><strong>Table 2: Six Computing Paradigms with Streaming and Steering contrasted with four other paradigms common in scientific computing.</strong></p>
+
+<p>In the first four paradigms of the above table, data is typically accessed systematically either at the start of or more generally at programmatically controlled stages of a computation. In workflow, multiple such data-driven computations are linked together. On the other hand, the streaming paradigm absorbs data asynchronously throughout the computation while steering feeds back control instructions.</p>
+
+<p>Identifying research directions will be one of the goals of the workshop. We can already identify the need to study the system architecture including balance between processing on source, fog (local) and cloud (backend), online algorithms, storage, data management, resource management, scheduling, programming models, quality of service (including delay in control responses) and fault tolerance. Optimizations like operator reordering, load balancing, fusion, fission etc. have been researched to reduce the latency of the stream processing applications [<a href="ssri.html#_ENREF_23" title="Hirzel, 2014 #6516">23</a>].</p>
+
+<h3>4.       Workshop Goals Objectives and Organization</h3>
+
+<h4>4.1       The Four Workshop Goals</h4>
+
+<p>The purpose of this workshop is to explore the landscape sketched above and identify the application and technology communities and converge on the immediate and long-term challenges. We propose a workshop that will examine four aspects of this landscape:</p>
+
+<ol>
+	<li><em>Application Study: </em>Table 1 is a limited sampling of applications that critically depend upon Steering HPC. It is necessary to extend and refine Table 1 with broader set of application characteristics and requirements. We need to improve the set of features at the end of Section 2 and identify which aspects are important in determining software and hardware requirements. Perhaps a set of benchmarks will be important</li>
+	<li><em>System Architectures:</em> A critical challenge that follows is to understand scalable architectures that will support the different types of streaming and steering applications in table 1, i.e., firm up the vague concept of  “ubiquitous sensors and Internet of Things” to match the range of applications types and infrastructure types. In particular we should identify where HPC, accelerators, and clouds are important.</li>
+	<li><em>Research Directions: </em>There is a need to integrate features of traditional HPC such as scientific libraries and communication with the rich set of capabilities found in the commercial streaming ecosystem. This general approach has been validated for a range of traditional applications, but not for rich class of streaming and steering problems. Interesting questions are centered on the  data management requirements while the NRC study [<a href="ssri.html#_ENREF_24" title="Committee on the Analysis of Massive Data; Committee on Applied and Theoretical Statistics; Board on Mathematical Sciences and Their Applications; Division on Engineering and Physical Sciences; National Research Council, 2013 #6281">24</a>]stressed the importance of new online (streaming -- look at each data point once) algorithms.</li>
+	<li><em>Next Steps Forward:</em> We hope this workshop starts a process that will identify and bind the community of applications and systems researchers and providers in the streaming and steering areas. We intend a thorough report with the final day of workshop devoted to writing this. As well as covering findings of workshop, the report will suggest next steps forward. These could include a second workshop to dig deeper in some areas, and other studies such as collection of benchmarks to move us forward</li>
+</ol>
+
+<h4>4.2       Preparation of Workshop Report</h4>
+
+<p>Breakout (working) groups will be asked to collaboratively author their reports in real time via shared collaborative tools (probably Google Documents), which allow multiple users to view and edit a document simultaneously, while saving and tracking edits by user. The breakout reports will be presented to the plenary, and made accessible online to all breakout groups for further discussion and edits. We will video record all major sessions of the workshop.</p>
+
+<p>All participants will be encouraged to stay for the 3rd writing day to refine notes, synthesize main findings and formulate key report sections. A pre-workshop organizational conference call will select track and theme leads (who will double as editors). The writing team, comprised of the organizers, track and theme leads will be required to stay.</p>
+
+<p>The writing team/editors will continue to engage after the workshop to finalize the report. We will deliver a draft final report within 30 days of the workshop. Whereas a bulk of the writing will occur on Day 3, the editors will meet via a remote conferencing system within 30 days of the workshop to prepare a final draft of the workshop report and findings. We have found this to be an effective pathway from the immediate aftermath of a workshop to a quick report.</p>
+
+<p>The draft report will be disseminated to all workshop participants and posted on the workshop web site; it will be distributed on mailing lists such as XSEDE, OSG, DOE welcoming and soliciting comments and feedback within a 45-day timeframe. We will thus deliver a final report to NSF 90 days from the workshop.</p>
+
+<p>The report will be a live document e.g., arXiv repository, with the main material and essentially complete first version, but one that is updated with incremental refinements. Taking advantage of the live document, in addition to bringing the community to the report, we will examine the possibility of taking the draft of the report to the community, whilst respecting the time constraint.</p>
+
+<h3>5.       Conclusions: Workshop Impact</h3>
+
+<p>Streaming data and steering are well established fields but just as data turned into a deluge with profound impact, now with the Internet of Things and new experimental instruments, we see a streaming deluge requiring new approaches to control or steering. This workshop will bring together interdisciplinary experts on applications and infrastructure to address the three conceptual goals of what are the driving applications, what are actual and needed hardware and software and what are research challenges.  The community identified for this workshop needs to work together on an ongoing basis and this will come out from the fourth “futures” goal of workshop. We are not aware of any closely related activity and suggest the streaming deluge can only be addressed by a set of activities such as those proposed here.</p>
+
+<h3>6.       Appendix: Workshop Schedule and Venue</h3>
+
+<p>The meeting is proposed to be held from September 30 to October 2 in Indianapolis at the IUPUI (combined Indiana University, Purdue Indianapolis campus) using their event facilities [<a href="ssri.html#_ENREF_25" title=", 2015 #6672">25</a>]which are located in the center of campus which is itself in downtown Indianapolis. It is an easy (14 mile) taxi ride from Indianapolis airport and near many downtown hotels including Marriott (nearest), Hyatt and Hilton. We have available the Tower Ballroom (see picture below with “oval” seating style) with seating for 60 in conference style and breakout rooms. The rooms are equipped with video conferencing/streaming presentation support.</p>
+
+<p>We will provide lunch and refreshments (coffee) to the participants plus a reception on the evening of September 30.</p>
+
+<p>The meeting is organized as two days (October 1, 2) for main discussions plus a final day (October 3) for organizers to work on meeting report. We only provide two small rooms on the final day to support the 6-10 people expected to attend that day.</p>
+
+<p>The meeting is organized around four goals described in Section IV: Application Study, Systems Architecture, Research Directions, Next Steps Forward with the first two goals covered on day one (September 30) and the second two goals on day two. A proposed schedule is given below.</p>
+
+<p>Note that we will be streaming sessions and questions and comments will be solicited from those attending remotely.</p>
+
+<h4>Day One Morning: Introduction and Plenary on Architectures and Systems</h4>
+
+<ul>
+	<li>Attendees Introduction: 2 slide presentations by those not on panels</li>
+	<li>Application Requirements Panel and discussion</li>
+	<li>System Architecture Panel and discussion</li>
+</ul>
+
+<h4>Day One Afternoon: Breakout Sessions</h4>
+
+<ul>
+	<li>Breakout Sessions: Application Requirements and System Architecture</li>
+	<li>Plenary Summary</li>
+</ul>
+
+<h4>Day Two Morning: Plenary on Research Directions and Next Steps Forward</h4>
+
+<ul>
+	<li>Recap and lessons from Day One</li>
+	<li>Research Directions Panel and discussion</li>
+	<li>Next Steps Forward Panel and discussion</li>
+	<li>Breakout Sessions: Research Directions and Next Steps Forward</li>
+</ul>
+
+<h4>Day Two Afternoon: Breakout Sessions and Planning</h4>
+
+<ul>
+	<li>Breakout Sessions: Research Directions and Next Steps Forward continued</li>
+	<li>Plenary Summary</li>
+	<li>Plenary discussion of findings in all four goals</li>
+	<li>Organize report writing and discussion of follow up activities</li>
+</ul>
+
+<h4>Day Three: Report Writing Day</h4>
+
+<p>Make as much progress as possible with workshop report</p>
+
+<p> </p>
+
+<p>NSF funded conferences are required to address child care services. These are available to our workshop attendees through “Sitters to the Rescue” established in 1996 with good credentials. The charge is $20 per hour per sitter.  If needed by any participant, we will rent another room at the IUPUI facility to satisfy this requirement.</p>
+
+<p>The proposed facilities satisfy federal accessibility requirements.</p>
+
+<h2>Streaming and Steering Applications: Requirements and Infrastructure</h2>
+
+<h3>References</h3>
+
+<p id="_ENREF_1">[1]       Cisco Internet Business Solutions Group (IBSG) (Dave Evans). <em>The Internet of Things: How the Next Evolution of the Internet Is Changing Everything</em>.  2011 April [accessed 2013 August 14]; Available from: <a href="http://www.cisco.com/web/about/ac79/docs/innov/IoT_IBSG_0411FINAL.pdf">http://www.cisco.com/web/about/ac79/docs/innov/IoT_IBSG_0411FINAL.pdf</a>.</p>
+
+<p id="_ENREF_2">[2]       Chauhan, N. <em>Modernizing Machine-to-Machine Interactions</em>.  2014  Available from: <a href="https://www.ge.com/digital/sites/default/files/download_assets/GE-Software-Modernizing-Machine-to-Machine-Interactions.pdf">https://www.ge.com/digital/sites/default/files/download_assets/GE-Software-Modernizing-Machine-to-Machine-Interactions.pdf</a>.</p>
+
+<p id="_ENREF_3">[3]       Kimberlee Morrison. <em>How Many Photos Are Uploaded to Snapchat Every Second?</em>  2015 June 9 [accessed 2015 June 15,]; Available from: <a href="http://www.adweek.com/socialtimes/how-many-photos-are-uploaded-to-snapchat-every-second/621488">http://www.adweek.com/socialtimes/how-many-photos-are-uploaded-to-snapchat-every-second/621488</a>.</p>
+
+<p id="_ENREF_4">[4]       ONR. <em>Data Focused Naval Tactical Cloud (DF-NTC): ONR Information Package</em>.  2014 June 24 [accessed 2015 June 15]; Available from: <a href="http://www.onr.navy.mil/~/media/Files/Funding-Announcements/BAA/2014/14-011-Attachment-0001.ashx">http://www.onr.navy.mil/~/media/Files/Funding-Announcements/BAA/2014/14-011-Attachment-0001.ashx</a>.</p>
+
+<p id="_ENREF_5">[5]       NIST. <em>NIST Big Data Public Working Group (NBD-PWG) Home Page</em>.  2013  [accessed 2015 March 31].</p>
+
+<p id="_ENREF_6">[6]       Geoffrey C. Fox, Shantenu Jha, Judy Qiu, and Andre Luckow, <em>Towards an Understanding of Facets and Exemplars of Big Data Applications</em>, in <em>20 Years of Beowulf: Workshop to Honor Thomas Sterling's 65th Birthday </em>April 13, 2015. Annapolis <a href="http://dsc.soic.indiana.edu/publications/OgrePaperv11.pdf">http://dsc.soic.indiana.edu/publications/OgrePaperv11.pdf</a>.</p>
+
+<p id="_ENREF_7">[7]       <em>DDDAS: Dynamic Data Driven Applications Systems NSF Site</em>.   [accessed 2015 July 22]; Available from: <a href="https://www.nsf.gov/publications/pub_summ.jsp?ods_key=nsf05570">https://www.nsf.gov/publications/pub_summ.jsp?ods_key=nsf05570</a>.</p>
+
+<p id="_ENREF_8">[8]       <em>Dynamic Data Driven Applications Systems (DDDAS) AFOSR Site</em>.   [accessed 2015 July 22]; Available from: <a href="https://community.apan.org/wg/afosr/w/researchareas/7661/dynamic-data-driven-applications-systems-dddas/">https://community.apan.org/wg/afosr/w/researchareas/7661/dynamic-data-driven-applications-systems-dddas</a>.</p>
+
+<p id="_ENREF_9">[9]       <em>DDDAS Dynamic Data-Driven Applications System Showcase</em>.   [accessed 2015 July 22]; Available from: <a href="http://www.1dddas.org/">http://www.1dddas.org/</a>.</p>
+
+<p id="_ENREF_10">[10]     Cherniack, M., H. Balakrishnan, M. Balazinska, D. Carney, U. Cetintemel, Y. Xing, and S.B. Zdonik. <em>Scalable Distributed Stream Processing</em>. in <em>CIDR</em> 2003.</p>
+
+<p id="_ENREF_11">[11]     Abadi, D.J., Y. Ahmad, M. Balazinska, U. Cetintemel, M. Cherniack, J.-H. Hwang, W. Lindner, A. Maskey, A. Rasin, and E. Ryvkina. <em>The Design of the Borealis Stream Processing Engine</em>. in <em>CIDR</em> 2005.</p>
+
+<p id="_ENREF_12">[12]     Thies, W., M. Karczmarek, and S. Amarasinghe. <em>StreamIt: A language for streaming applications</em>. in <em>Compiler Construction</em> 2002: Springer.</p>
+
+<p id="_ENREF_13">[13]     Gedik, B., H. Andrade, K.-L. Wu, P.S. Yu, and M. Doo. <em>SPADE: the system s declarative stream processing engine</em>. in <em>Proceedings of the 2008 ACM SIGMOD international conference on Management of data</em> 2008: ACM.</p>
+
+<p id="_ENREF_14">[14]     Neumeyer, L., B. Robbins, A. Nair, and A. Kesari. <em>S4: Distributed stream computing platform</em>. in <em>Data Mining Workshops (ICDMW), 2010 IEEE International Conference on</em> 2010: IEEE.</p>
+
+<p id="_ENREF_15">[15]     Anderson, Q., <em>Storm Real-time Processing Cookbook</em>. 2013: Packt Publishing Ltd. ISBN:178216443X</p>
+
+<p id="_ENREF_16">[16]     Kamburugamuve, S.,<em> Survey of distributed stream processing for large stream sources</em>. 2013. <a href="http://grids.ucs.indiana.edu/ptliupages/publications/survey_stream_processing.pdf">http://grids.ucs.indiana.edu/ptliupages/publications/survey_stream_processing.pdf</a>.</p>
+
+<p id="_ENREF_17">[17]     Zaharia, M., T. Das, H. Li, S. Shenker, and I. Stoica. <em>Discretized streams: an efficient and fault-tolerant model for stream processing on large clusters</em>. in <em>Proceedings of the 4th USENIX conference on Hot Topics in Cloud Ccomputing</em> 2012: USENIX Association.</p>
+
+<p id="_ENREF_18">[18]     Sanjeev Kulkarni, Nikunj Bhagat, Maosong Fu, Vikas Kedigehalli, Christopher Kellogg, Sailesh Mittal, Jignesh M. Patel, Karthik Ramasamy, and Siddarth Taneja, <em>Twitter Heron: Stream Processing at Scale</em>, in <em>Proceedings of the 2015 ACM SIGMOD International Conference on Management of Data</em>. 2015, ACM. Melbourne, Victoria, Australia. pages. 239-250. DOI: 10.1145/2723372.2742788.</p>
+
+<p id="_ENREF_19">[19]     Shrideep Pallickara. <em>Granules Home Page</em>.  2015  [accessed 2015 JUne 12]; Available from: <a href="http://granules.cs.colostate.edu/">http://granules.cs.colostate.edu/</a>.</p>
+
+<p id="_ENREF_20">[20]     Akidau, T., A. Balikov, K. Bekiroğlu, S. Chernyak, J. Haberman, R. Lax, S. McVeety, D. Mills, P. Nordstrom, and S. Whittle, <em>MillWheel: fault-tolerant stream processing at internet scale.</em> Proceedings of the VLDB Endowment, 2013. 6(11): p. 1033-1044.</p>
+
+<p id="_ENREF_21">[21]     Microsoft. <em>Azure Stream Analytics</em>.  2015  [accessed 2015 June 12]; Available from: <a href="http://azure.microsoft.com/en-us/services/stream-analytics/">http://azure.microsoft.com/en-us/services/stream-analytics/</a>.</p>
+
+<p id="_ENREF_22">[22]     Varia, J. and S. Mathew. <em>Overview of amazon web services</em>.  2013  Available from: <a href="http://docs.aws.amazon.com/gettingstarted/latest/awsgsg-intro/intro.html">http://docs.aws.amazon.com/gettingstarted/latest/awsgsg-intro/intro.html</a>.</p>
+
+<p id="_ENREF_23">[23]     Hirzel, M., R. Soulé, S. Schneider, B. Gedik, and R. Grimm, <em>A catalog of stream processing optimizations.</em> ACM Computing Surveys (CSUR), 2014. 46(4): p. 46.</p>
+
+<p id="_ENREF_24">[24]     Committee on the Analysis of Massive Data; Committee on Applied and Theoretical Statistics; Board on Mathematical Sciences and Their Applications; Division on Engineering and Physical Sciences; National Research Council, <em>Frontiers in Massive Data Analysis</em>. 2013: National Academies Press. <a href="http://www.nap.edu/catalog.php?record_id=18374">http://www.nap.edu/catalog.php?record_id=18374</a></p>
+
+<p id="_ENREF_25">[25]     <em>IUPUI Indianapolis Event Facilities</em>.  2015  [accessed 2015 June 15]; Available from: <a href="http://eventservices.iupui.edu/facilities.asp">http://eventservices.iupui.edu/facilities.asp</a>.</p>
+</div>
+      
+  </div>
+
+</article>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+        <div class="region region-footer">
+    <nav role="navigation" aria-labelledby="block-dsc-bootstrap-account-menu-menu" id="block-dsc-bootstrap-account-menu">
+            <h2 class="sr-only" id="block-dsc-bootstrap-account-menu-menu">User account menu</h2>
+
+      
+      <ul class="menu menu--account nav navbar-nav navbar-right">
+                      <li class="first last">
+                                        <a href="user/login.html" data-drupal-link-system-path="user/login">Log in</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+    </footer>
+  
+<footer id="footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/CollegeOrUniversity">
+    <div class="row pad">
+
+        <p class="tagline">Fulfilling <span>the</span> Promise</p>
+
+        <p class="signature">
+            <a href="https://www.iu.edu" class="signature-link">Indiana University</a>
+        </p>
+
+        <p class="copyright">
+        <a href="https://www.iu.edu/copyright/index.html">Copyright</a> &#169; 2020 <span class="line-break-small">The Trustees of <a href="https://www.iu.edu/" itemprop="url"><span itemprop="name">Indiana University</span></a></span><span class="hide-on-mobile"> | </span><span class="line-break"><a href="privacy.html" id="privacy-policy-link">Privacy Notice</a> | <a href="https://accessibility.iu.edu" id="accessibility-link" title="Having trouble accessing this web page because of a disability? Visit this page for assistance.">Accessibility</a></span>
+        </p>
+    </div>
+</footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/55","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"ajaxTrustedUrl":{"\/search\/node":true},"user":{"uid":0,"permissionsHash":"f7b8dc7c38a7939459741505e64d9a7716f6a1a04c660deea52c85cadbbd44da"}}</script>
+<script src="sites/default/files/js/js_N25huzd5_nvxUy0vaNALIG6fo46vv3n833_3JR2rIqM.js"></script>
+<script src="themes/custom/dsc_bootstrap/js/bootstrap.min.js"></script>
+<script src="sites/default/files/js/js_guaLTAo-vz9d3N3Hsc7gjYVRxwSafdSfcYWr09X1jbg.js"></script>
+
+  </body>
+</html>
